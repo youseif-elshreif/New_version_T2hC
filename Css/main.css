@@ -888,7 +888,9 @@ header .burger-list:hover span:nth-last-child(2) {
     flex-basis: calc(50% - 40px);
     padding: 20px;
 }
-
+.skills .container>div{
+    position: relative;
+}
 .skills .sec-head+div {
     margin-top: 30px;
 }
@@ -1010,12 +1012,12 @@ header .burger-list:hover span:nth-last-child(2) {
 }
 
 .skills .our-skills .bars div:not(:nth-last-child(1)) {
-    margin-bottom: 39px;
+    margin-bottom: 60px;
 }
 
-@media (min-width:992px) and (max-width:1200px) {
+@media (min-width:767px) and (max-width:1200px) {
     .skills .our-skills .bars div:not(:nth-last-child(1)) {
-        margin-bottom: 23px;
+        margin-bottom: 40px;
     }
 }
 
