@@ -370,7 +370,7 @@ header .burger-list:hover span:nth-last-child(2) {
 .landing .text {
     width: 60%;
     background-color: var(--main-color);
-    position: absolute;
+    position: relative;
     padding: 40px 50px 70px 150px;
     top: 50%;
     transform: translateY(-50%);
@@ -383,6 +383,12 @@ header .burger-list:hover span:nth-last-child(2) {
 @media (max-width:992px) {
     .landing .text {
         padding: 40px 50px 70px 50px;
+        top: 0;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
     }
 }
 
