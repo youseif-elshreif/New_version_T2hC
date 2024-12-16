@@ -21,6 +21,10 @@ html {
     scroll-behavior: smooth;
 }
 
+::selection {
+    background-color: var(--hover-color);
+}
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -111,12 +115,16 @@ section {
     background-color: var(--hover-color);
 }
 
+.sec-head {
+    margin-bottom: 30px;
+}
+
 .sec-head h1 {
     font-size: 30px;
     padding-bottom: 30px;
     margin: 0;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 2px;
     text-align: center;
     position: relative;
@@ -126,7 +134,7 @@ section {
     content: "";
     position: absolute;
     width: 120px;
-    height: 2px;
+    height: 1.5px;
     background-color: black;
     bottom: 0;
     left: calc(50% - 60px);
@@ -152,6 +160,30 @@ section {
     color: var(--p-color);
     margin: 0;
     text-align: center;
+}
+
+.btn {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.btn button {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: var(--hover-color);
+    font-size: 18px;
+    display: block;
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+[type="submit"] {
+    border: none;
+    background-color: var(--hover-color) !important;
+    color: white;
 }
 
 /* end-componants */
@@ -320,6 +352,7 @@ header .burger-list:hover span:nth-last-child(2) {
     background-image: url(../image/sec-2-3.jpg);
     background-size: cover;
     color: white;
+    padding: 92px 0;
 }
 
 @media (max-width:992px) {
@@ -703,23 +736,7 @@ header .burger-list:hover span:nth-last-child(2) {
     color: var(--hover-color);
 }
 
-.protofolio .b-more {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 100%;
-}
 
-.protofolio .b-more button {
-    width: fit-content;
-    margin: 0 auto;
-    padding: 10px 20px;
-    background-color: var(--hover-color);
-    font-size: 18px;
-    display: block;
-    border: none;
-    color: white;
-    letter-spacing: 2px;
-}
 
 /* end-protofolio */
 /* start-video */
@@ -808,8 +825,9 @@ header .burger-list:hover span:nth-last-child(2) {
 /* start-count */
 .count {
     position: relative;
-    background-image: url(../image/de.jpg);
+    background-image: url(../image/de2.jpg);
     background-size: cover;
+    background-position: 50%;
     color: white;
 }
 
@@ -888,9 +906,11 @@ header .burger-list:hover span:nth-last-child(2) {
     flex-basis: calc(50% - 40px);
     padding: 20px;
 }
-.skills .container>div{
+
+.skills .container>div:nth-child(1) {
     position: relative;
 }
+
 .skills .sec-head+div {
     margin-top: 30px;
 }
@@ -1022,3 +1042,328 @@ header .burger-list:hover span:nth-last-child(2) {
 }
 
 /* end-skills */
+/* start-Jone */
+.jone {
+    background-image: url(../image/de3.jpg);
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.jone .container {
+    text-align: center;
+    width: 70%;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+@media (max-width:767px) {
+    .jone .container {
+        width: 100%;
+        font-size: 22px;
+    }
+}
+
+.jone .container h2 {
+    margin-bottom: 30px;
+}
+
+/* end-Jone */
+/* start-prices */
+.prices {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px 30px;
+    display: grid;
+}
+
+@media(max-width:767px) {
+    .prices {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+.prices .price {
+    text-align: center;
+
+}
+
+.prices .price .text {
+    border-top: 2px solid var(--hover-color);
+    border-bottom: 2px solid var(--hover-color);
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prices .num {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.prices .num h2,
+.prices .num p:nth-last-child(1) {
+    display: inline;
+}
+
+.prices .num h2 {
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+}
+
+.prices .num h2::after {
+    content: "$";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    top: 15px;
+    left: -15px;
+}
+
+.prices .num p:nth-child(1) {
+    font-size: 18px;
+}
+
+.prices .text>p {
+    padding: 20px;
+    width: fit-content;
+    position: relative;
+}
+
+.prices .text>p:not(:nth-last-child(1))::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 120px;
+    background-color: var(--hover-color);
+}
+
+.prices .text div {
+    border-bottom: 2px solid var(--hover-color);
+}
+
+.prices button {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid var(--hover-color);
+}
+
+.pricing .container>div:nth-last-child(1) {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.pricing .container>div:nth-last-child(1) p {
+    font-size: initial;
+}
+
+/* end-prices */
+/* start-sub */
+.sub {
+    background-image: url(../image/sub.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+
+.sub::before {
+    background-color: rgba(18, 27, 58, 0.5);
+}
+
+.sub .container {
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width:767px) {
+    .sub .container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.sub .container form {
+    border: 2px solid white;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto minmax(20px, 1fr) 120px;
+    height: 50px;
+}
+
+@media (min-width:767px) {
+    .sub .container form {
+        grid-area: 1 / 1 / 2 / 8;
+        height: 100%;
+    }
+}
+
+.sub .container form i {
+    padding: 10px;
+}
+
+.sub .container form input {
+    background: transparent;
+    height: 100%;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.sub .container form input::placeholder {
+    color: white;
+    font-size: 13px;
+}
+
+
+.sub .container p {
+    font-size: initial;
+    text-align: center;
+}
+
+@media (min-width:767px) {
+    .sub .container p {
+        grid-area: 1 / 8/ 2 / 13;
+    }
+}
+
+/* end-sub */
+/* start-contact */
+.contact .fo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+@media (min-width:767px) {
+    .contact .fo {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+}
+
+.contact .fo form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+@media (min-width:767px) {
+    .contact .fo form {
+        grid-area: 1 / 1 / 2 / 10;
+    }
+}
+
+.contact .fo input:not(:nth-last-child(1)),
+.contact .fo textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--p-color);
+    margin-bottom: 30px;
+}
+
+.contact .fo textarea {
+    margin-bottom: 60px;
+    height: 180px;
+}
+
+.contact .fo input:not(:nth-last-child(1))::placeholder,
+.contact .fo textarea::placeholder {
+    color: black;
+}
+
+.contact .fo input:nth-last-child(1) {
+    padding: 10px;
+}
+
+.contact .fo .text {
+    display: flex;
+    margin-top: -70px;
+}
+
+
+.contact .fo .text div:nth-child(1) p:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+.contact .fo .text div:nth-child(2) p:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+.contact .fo .text div:nth-child(2) {
+    margin-left: 100px;
+}
+
+@media (min-width:767px) {
+    .contact .fo .text {
+        grid-area: 1 / 10 / 2/ 13;
+        display: block;
+        margin-top: 0px;
+    }
+
+    .contact .fo .text div:nth-child(2) p:nth-child(1) {
+        margin-bottom: 15px;
+        margin-top: 70px;
+    }
+
+    .contact .fo .text div:nth-child(2) {
+        margin-left: 0;
+    }
+}
+
+.contact .fo .text div p:not(:nth-child(1)) {
+    color: var(--p-color);
+}
+
+/* end-contact */
+/* start-footer */
+footer {
+    position: relative;
+    padding: 60px 0 30px;
+    color: white;
+    background-image: url(../image/footer1\.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+footer .container img {
+    height: 36px;
+}
+
+footer .container h3 {
+    padding: 10px;
+    width: fit-content;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+
+footer .container div {
+    margin-bottom: 40px;
+}
+
+footer .container div i {
+    margin: 0 5px;
+}
+
+footer span {
+    color: var(--hover-color);
+}
+
+/* end-footer */
