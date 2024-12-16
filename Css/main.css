@@ -389,7 +389,7 @@ header .burger-list:hover span:nth-last-child(2) {
 @media (max-width:767px) {
     .landing .text {
         width: 100%;
-        padding: 30px;
+        padding: 25px 30px;
     }
 }
 
