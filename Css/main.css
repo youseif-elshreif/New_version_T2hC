@@ -383,12 +383,6 @@ header .burger-list:hover span:nth-last-child(2) {
 @media (max-width:992px) {
     .landing .text {
         padding: 40px 50px 70px 50px;
-        top: 0;
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
     }
 }
 
@@ -1306,7 +1300,7 @@ header .burger-list:hover span:nth-last-child(2) {
 }
 
 .contact .fo .text div:nth-child(2) {
-    margin-left: 100px;
+    margin-left: 25px;
 }
 
 @media (min-width:767px) {
@@ -1364,8 +1358,9 @@ footer .container div {
     margin-bottom: 40px;
 }
 
-footer .container div i {
+footer .container div a i {
     margin: 0 5px;
+    color: white;
 }
 
 footer span {
