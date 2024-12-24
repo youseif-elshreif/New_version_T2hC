@@ -3,7 +3,6 @@
     --hover-color: #00E1FF;
     --main-color: rgb(0 152 172 / 70%);
     --p-color: rgb(215, 215, 215);
-
 }
 
 /* end Variables */
@@ -45,6 +44,10 @@ p {
 section {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+textarea {
+    resize: none;
 }
 
 .container {
