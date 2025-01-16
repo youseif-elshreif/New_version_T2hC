@@ -1293,7 +1293,11 @@ header .burger-list:hover span:nth-last-child(2) {
     margin-top: -70px;
 }
 
-
+@media (min-width:767px) {
+.contact .fo .text {
+    margin-top: 25px;
+}
+}
 .contact .fo .text div:nth-child(1) p:nth-child(1) {
     margin-bottom: 15px;
 }
