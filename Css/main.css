@@ -1290,14 +1290,13 @@ header .burger-list:hover span:nth-last-child(2) {
 
 .contact .fo .text {
     display: flex;
-    margin-top: 25px;
-}
-.contact .fo .text div:nth-child(1) p:nth-child(1) {
-    margin-bottom: 15px;
+    margin-top: -70px;
 }
 
+
+.contact .fo .text div:nth-child(1) p:nth-child(1),
 .contact .fo .text div:nth-child(2) p:nth-child(1) {
-    margin-bottom: 15px;
+    margin-top: 80px;
 }
 
 .contact .fo .text div:nth-child(2) {
@@ -1314,6 +1313,9 @@ header .burger-list:hover span:nth-last-child(2) {
     .contact .fo .text div:nth-child(2) p:nth-child(1) {
         margin-bottom: 15px;
         margin-top: 70px;
+    }
+    .contact .fo .text div:nth-child(1) p:nth-child(1) {
+        margin-top: 0px;
     }
 
     .contact .fo .text div:nth-child(2) {
